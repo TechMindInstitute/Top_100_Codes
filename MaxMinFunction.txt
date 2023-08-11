@@ -1,0 +1,24 @@
+//Write a C Program ti find the Max and Min of 2 numbers
+#include<stdio.h>
+void Compare(int A, int B){
+    int Max,Min;
+    if(A>B){
+        Max=A;
+        Min=B;
+    }
+    else{
+        Max=B;
+        Min=A;
+    }
+    printf("Maximun Number is : %d\nMinimum Number is : %d",Max,Min);
+}
+
+int main(){
+    printf("Enter a Number: ");
+    int A;
+    int B;
+    scanf("%d",&A);
+    printf("Enter a Number: ");
+    scanf("%d",&B);
+    Compare(A,B);
+}

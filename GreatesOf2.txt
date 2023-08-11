@@ -1,0 +1,16 @@
+//Write a C Program to find greatest of 2 numbers
+#include<stdio.h>
+int main(){
+    int N,M;
+    printf("Enter a Number: ");
+    scanf("%d",&N);
+    printf("Enter a Number: ");
+    scanf("%d",&M);
+    if(M>N){
+        printf("%d",M);
+    }
+    else{
+        printf("%d",N);
+    }
+    return 0;
+}

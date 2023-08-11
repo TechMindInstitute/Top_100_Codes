@@ -1,0 +1,21 @@
+//Write a C program to print the greatest of 3 numbers
+#include<stdio.h>
+int main(){
+    int A,B,C;
+    printf("Enter a Number: ");
+    scanf("%d",&A);
+    printf("Enter a Number: ");
+    scanf("%d",&B);
+    printf("Enter a Number: ");
+    scanf("%d",&C);
+    if((A>B) && (A>C)){
+        printf("%d is the greatest",A);
+    }
+    else if(B>C){
+        printf("%d is the greatest",B);
+    }
+    else{
+        printf("%d is the greatest",C);
+    }
+    
+}

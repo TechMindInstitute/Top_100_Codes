@@ -1,0 +1,14 @@
+//Write a C Program to to find the cube of the number using function
+#include<stdio.h>
+int cube(int a){
+    return a*a*a;
+}
+
+int main(){
+    printf("Enter a Number: ");
+    int N;
+    scanf("%d",&N);
+    int Ans=cube(N);
+    printf("Cube of the Number is: %d",Ans);
+    return 0;
+}

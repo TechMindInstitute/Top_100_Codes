@@ -1,0 +1,29 @@
+//Write a C program to check whether the Number is Armstrong or Not
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int N;
+    printf("Enter a Number: ");
+    scanf("%d",&N);
+    int M=N;
+    int O=N;
+    int count=0;
+    while(N!=0){
+        count++;
+        N=N/10;
+    }
+    int ans=0;
+    while(M!=0){
+        int digit=M%10;
+        ans=ans+pow(digit,count);
+        M=M/10;
+    }
+    if(O==ans){
+    printf("Armstrong Number");        
+    }
+    else{
+        printf("Not an Armstrong");
+    }
+
+    return 0;
+}

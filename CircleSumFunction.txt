@@ -1,0 +1,19 @@
+//Write a C Program to print Circumeference, Diameter, Area of circle using Function
+#include<stdio.h>
+# define PI 3.14
+    void Calc(float R){
+    double Area=2*PI*R;
+    double Circumeference=PI*R*R;
+    double Diameter=2*R;
+    
+    printf("Area of the Circe is: %lf\n",Area);
+    printf("Circumeference of the Circe is: %lf\n",Circumeference);
+    printf("Diameter of the Circe is: %lf\n",Diameter);
+    }
+int main(){
+    printf("Enter the Radius of the circle: ");
+    double R;
+    scanf("%lf",&R);
+    Calc(R);
+    
+}

@@ -1,0 +1,21 @@
+//Write a C Program to reverse an Array
+#include<stdio.h>
+int main(){
+    printf("Enter the size of the Array: ");
+    int N;
+    scanf("%d",&N);
+    int Arr[N];
+    for(int i=0;i<N;i++){
+        scanf("%d",&Arr[i]);
+    }
+    
+    int Arr1[N];
+    for(int i=0;i<N;i++){
+        Arr1[N-i]=Arr[i];
+    }
+    
+    for(int i=1;i<=N;i++){
+        printf("%d  ",Arr1[i]);
+    }
+    return 0;
+}

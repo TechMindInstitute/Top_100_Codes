@@ -1,0 +1,36 @@
+//Write a C program to print Armstrong Numbers in given Range
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int M;
+    printf("Enter a Number: ");
+    scanf("%d",&M);
+    int N;
+    printf("Enter a Number: ");
+    scanf("%d",&N);
+    if(M<N){
+        for(int i=M;i<=N;i++){
+            int count=0;
+            int a=i;
+            int b=i;
+            int c=i;
+            while(a!=0){
+                a=a/10;
+                count++;
+            }
+            int ans=0;
+            while(b!=0){
+                int digit=b%10;
+                ans=ans+pow(digit,count);
+                b=b/10;
+            }
+            if((ans==c) && (ans>9)){
+                printf("%d\n",ans);
+            }
+        }
+    }
+    else{
+        printf("Not a valid input");
+    }
+    return 0;
+}

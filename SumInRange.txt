@@ -1,0 +1,14 @@
+//Write a C Program to print the sum of N numbers in a given range
+#include<stdio.h>
+int main(){
+    int N,M,sum=0;
+    printf("Enter Starting Number: ");
+    scanf("%d",&N);
+    printf("Enter Ending Number: ");
+    scanf("%d",&M);
+    for(int i=N;i<=M;i++){
+        sum=sum+i;
+    }
+    printf("%d",sum);
+    return 0;
+}

@@ -1,0 +1,25 @@
+//Write a C program to check whether the given number is Strong Number r Not
+#include<stdio.h>
+int main(){
+    int N;
+    printf("Enter a Number: ");
+    scanf("%d",&N);
+    int M=N;
+    int ans;
+    while(N!=0){
+        int digit=N%10;
+        int fact=1;
+        for(int i=1;i<=digit;i++){
+            fact=fact*i;
+        }
+        ans=ans+fact;
+        N=N/10;
+    }
+    if(ans==M){
+        printf("Strong Number");
+    }
+    else{
+        printf("Not a Strong Number");
+    }
+    return 0;
+}

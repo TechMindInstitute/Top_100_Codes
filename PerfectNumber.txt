@@ -1,0 +1,22 @@
+//Write a C program to check whether the given number is Perfect Number r Not
+#include<stdio.h>
+int main(){
+    int N;
+    printf("Enter a Number: ");
+    scanf("%d",&N);
+    int ans=0;
+    for(int i=1;i<N;i++){
+        if(N%i==0){
+            ans=ans+i;
+        }
+    }
+
+    
+    if(ans==N){
+        printf("Perfect Number");
+    }
+    else{
+        printf("Not a Perfect Number");
+    }
+    return 0;
+}

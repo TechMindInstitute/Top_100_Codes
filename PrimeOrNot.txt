@@ -1,0 +1,25 @@
+//Write a C program to check whether Prime or Not
+#include<stdio.h>
+int main(){
+    int N;
+    printf("Enter a Number: ");
+    scanf("%d",&N);
+    if(N<1){
+        printf("Not a Prime");
+    }
+    else{
+        int count=0;
+        for(int i=1;i<=N;i++){
+            if(N%i==0){
+                count++;
+            }
+        }
+        if(count==2){
+            printf("Prime");
+        }
+        else{
+            printf("Not a Prime");
+        }
+    }
+    return 0;
+}

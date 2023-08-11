@@ -1,0 +1,14 @@
+//Write a C program to find power of a number
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int M;
+    int N;
+    printf("Enter Base Number: ");
+    scanf("%d",&M);
+    printf("Enter Exponent Number: ");
+    scanf("%d",&N); 
+    int Ans=pow(M,N);
+    printf("Power of the Numbers are: %d",Ans);
+    return 0;
+}
